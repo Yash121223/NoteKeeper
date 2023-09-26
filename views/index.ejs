@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteKeeper</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscount.com/release/v4.0.0/css/line.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="/js/toastr/toastr.min.css"></script>
+</head>
+<body>
+    <div class="wrapper" id="NoteBox">
+        <li class="add-box" id="addBtn">
+            <div class="icon" id="addicon" onclick="addClick()">
+                +
+            </div>
+            <p>Add new note</p>
+        </li>
+
+        <!-- <li class="note">
+            <div class="details">
+                <p>This is a Title</p>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed error illum quisquam ducimus eius tempora rerum doloremque placeat voluptate.</span>
+            </div>
+            <div class="bottom-content">
+                <span>April 3, 2022</span>
+                <div class="settings" id="s1">
+                    <i class="fa fa-ellipsis-v" style="font-size:24px" onclick="showMenu(this)"></i>
+
+                    <ul class="mixOpt">
+                        <li>Edit</li>
+                        <li>Delete</li>
+                    </ul>
+                </div>
+            </div>
+
+          
+        </li> -->
+         <!-- <li class="note">
+            <div class="details">
+                <p id="title~1">This is a Title</p>
+                <span id="span~1" contenteditable="false">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed error illum quisquam ducimus eius tempora rerum doloremque placeat voluptate.</span>
+            </div>
+            <div class="bottom-content">
+                <span>April 3, 2022</span>
+                <button class="btns2" id="saveMenu~1" onclick="stopEdit(1, this)">Save</button>
+                <div class="settings">
+
+                    <i class="fa fa-ellipsis-v" style="font-size:24px" onclick="showMenu(this)"></i>
+
+                    <ul class="mixOpt">
+                        <li onclick="editBox(1, this)">Edit</li>
+                        <li>Delete</li>
+                    </ul>
+                </div>
+            </div>
+        </li> -->
+
+<!--
+        <li class="note">
+            <div class="details">
+                <p>This is a Title</p>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed error illum quisquam ducimus eius tempora rerum doloremque placeat voluptate.</span>
+            </div>
+            <div class="bottom-content">
+                <span>April 3, 2022</span>
+                <div class="settings">
+                    <i class="fa fa-ellipsis-v" style="font-size:24px"></i>
+
+                    <ul class="mixOpt">
+                        <li>Edit</li>
+                        <li>Delete</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+
+        <li class="note">
+            <div class="details">
+                <p>This is a Title</p>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed error illum quisquam ducimus eius tempora rerum doloremque placeat voluptate.</span>
+            </div>
+            <div class="bottom-content">
+                <span>April 3, 2022</span>
+                <div class="settings">
+                    <i class="fa fa-ellipsis-v" style="font-size:24px"></i>
+
+                    <ul class="mixOpt">
+                        <li>Edit</li>
+                        <li>Delete</li>
+                    </ul>
+                </div>
+            </div>
+        </li>-->
+    </div> 
+
+
+    <div class="popUpBox" id="popBox">
+        <div class="popdiv"><Span>Title</Span> <input type="text" placeholder="Enter Title" id="titBox"> </div>
+        <div class="popdiv"><Span>Description</Span> <textarea id="dbox" name="" id="" cols="30" rows="10" placeholder="Enter Description"></textarea> </div>
+
+        <div class="btnss">
+            <button class="btns" id="saveBtn" onclick="savingNote()">Save</button>
+            <button class="btns" id="closeBtn" onclick="closeAdd()">Close</button>
+
+        </div>
+    </div>
+
+
+    <script src="/js/main.js"></script>
+
+
+    <script>
+        loadNotes();
+    </script>
+</body>
+</html>
